@@ -12,6 +12,7 @@ import org.amarcel.lib.microsoft.azure.azure_function.graphql.AzureGraphQlHttpUt
 
 class GraphQlAzureFunction extends AzureSpringBootRequestHandler[GraphQlHttpRequest, GraphQlHttpOk] {
 
+  println("====  GraphQlAzureFunction constructor ")
   @FunctionName(GraphQlFunctionConfiguration.FUNCTION_NAME)
   def execute(
                @HttpTrigger(name = "graphQlRequest",
@@ -20,6 +21,8 @@ class GraphQlAzureFunction extends AzureSpringBootRequestHandler[GraphQlHttpRequ
                )
                azureRequest: HttpRequestMessage[GraphQlHttpRequest],
                context: ExecutionContext): HttpResponseMessage /* of GraphQlHttpOk */ = {
+
+    println("====  GraphQlAzureFunction.execute ")
 
     try {
       okHttp(

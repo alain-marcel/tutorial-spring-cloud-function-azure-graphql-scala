@@ -1,3 +1,7 @@
+Package
+=======
+mvn clean package
+
 Launch with ide_spring_boot__run_app.bat
 ========================================
 
@@ -5,7 +9,7 @@ POST http://localhost:8080/graphql with body { "query": "{pets{name}}" }
 => return {"data":{"pets":[{"name": "Billou" }, {"name": "Boullou" }
 
 
-POST http://localhost:8080/graphql with body { "name": "Bob" }
+POST http://localhost:8080/hello with body { "name": "Bob" }
 => return { "welcomeMessage": "Welcome Bob" }
 
 

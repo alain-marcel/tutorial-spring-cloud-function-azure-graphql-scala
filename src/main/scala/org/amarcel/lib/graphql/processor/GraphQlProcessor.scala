@@ -20,6 +20,8 @@ import org.amarcel.lib.graphql.{GraphQlHttpOk, GraphQlHttpRequest, NgeGraphQlHtt
 @Component
 class GraphQlProcessor(configuration: GraphQLConfiguration) {
 
+  println("====  GraphQlProcessor constructor ")
+
   /**
     * Copy / paste from `AbstractGraphQLHttpServlet.doRequest()`.
     */

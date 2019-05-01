@@ -10,10 +10,14 @@ import org.springframework.context.annotation.ComponentScan
 @SpringBootApplication
 @ComponentScan(lazyInit = true)
 class SpringBootApp {
+  println("====  SpringBootApp class")
 }
 
 object SpringBootApp {
   def main(args: Array[String]): Unit = {
+
+    println("====  SpringBootApp main")
+
     val bootstrapClasses: Array[Class[_]] = Array(classOf[SpringBootApp])
     SpringApplication.run(bootstrapClasses, args)
   }

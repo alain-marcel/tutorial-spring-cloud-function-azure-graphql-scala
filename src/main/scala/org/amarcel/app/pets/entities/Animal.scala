@@ -1,0 +1,31 @@
+package org.amarcel.app.pets.entities
+
+case class Animal(
+//                   id: String,
+                   prop1: String,
+                   prop2: String,
+                   prop3: String,
+                   prop4: String,
+                   prop5: String,
+                   prop6: String,
+                   prop7: String,
+                   prop8: String,
+                   prop9: String,
+                   prop10: String,
+                   prop11: String,
+                   prop12: String,
+                   prop13: String,
+                   prop14: String,
+                   prop15: String,
+//                   prop16: String,
+//                   prop17: String,
+//                   prop18: String,
+//                   prop19: String,
+//                   prop20: String,
+//                   prop21: String,
+//                   prop22: String,
+//                   prop23: String,
+//                   prop24: String,
+//                   prop25: String,
+                 )
+
